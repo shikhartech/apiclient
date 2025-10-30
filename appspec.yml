@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/html/apiclient/
+file_exists_behavior: OVERWRITE
+
+permissions:
+  - object: /var/www/apiclient
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+    mode: 755
